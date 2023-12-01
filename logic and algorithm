@@ -1,0 +1,7 @@
+1.Palindrome Checking Function:The is_palindrome function is a helper function that checks whether a given substring is a palindrome.Return True if it is a palindrome, otherwise return False.
+2.Main Function:The main function takes a string s as input and aims to find the shortest palindrome by adding characters in front of it.
+3.Loop Logic:In the loop, the code examines if the substring from the string's start to the current index (s[:i + 1]) is a palindrome. If so, it adds the reversed remaining part of the string to the front (s[i + 1:][::-1] + s). This step ensures that the code forms a palindrome by extending the already identified longest palindrome substring.
+4.If No Palindrome Found:If the entire string is a palindrome the original string is returned.
+
+The time complexity of the algorithm is O(n^2) 
+The space complexity is O(1)
